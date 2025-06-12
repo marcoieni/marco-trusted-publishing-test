@@ -1,3 +1,3 @@
 # trusted-publishing-test
 
-test.
+test
