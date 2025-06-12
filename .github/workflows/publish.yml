@@ -26,5 +26,5 @@ jobs:
     - name: Publish to crates.io
       run: cargo publish --registry staging
       env:
-        CARGO_REGISTRY_STAGING_TOKEN: ${{ steps.auth.outputs.token }}
+        CARGO_REGISTRIES_STAGING_TOKEN: ${{ steps.auth.outputs.token }}
         CARGO_REGISTRIES_STAGING_INDEX: https://github.com/rust-lang/staging.crates.io-index
