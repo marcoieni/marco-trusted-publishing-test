@@ -20,6 +20,8 @@ jobs:
     - name: Authenticate with crates.io
       id: auth
       uses: marcoieni/trusted-publishing-action-draft@main
+      with:
+        endpoint: https://staging.crates.io
 
 #     - name: Publish to crates.io
 #       run: cargo publish
