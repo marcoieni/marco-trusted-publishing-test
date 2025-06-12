@@ -21,9 +21,10 @@ jobs:
       id: auth
       uses: marcoieni/trusted-publishing-action-draft@main
       with:
-        endpoint: https://staging.crates.io
+        url: https://staging.crates.io
 
-#     - name: Publish to crates.io
-#       run: cargo publish
-#       env:
-#         CARGO_REGISTRY_TOKEN: ${{ steps.auth.outputs.token }}
+    - name: Publish to crates.io
+      run: cargo publish --registry staging
+      env:
+        CARGO_REGISTRY_STAGING_TOKEN: ${{ steps.auth.outputs.token }}
+        CARGO_REGISTRIES_STAGING_INDEX: https://github.com/rust-lang/staging.crates.io-index
