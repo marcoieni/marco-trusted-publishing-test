@@ -1,5 +1,5 @@
 [package]
-name = "marco-trusted-publishing-test2"
+name = "marco-trusted-publishing-test"
 version = "0.2.2"
 description = "A trusted publishing test crate"
 license = "MIT OR Apache-2.0"
