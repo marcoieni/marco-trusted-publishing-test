@@ -19,7 +19,7 @@ jobs:
 
     - name: Authenticate with crates.io
       id: auth
-      uses: marcoieni/trusted-publishing-action-draft@main
+      uses: rust-lang/crates-io-auth-action@project-import
       with:
         url: https://staging.crates.io
 
