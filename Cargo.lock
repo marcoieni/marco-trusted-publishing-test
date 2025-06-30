@@ -4,4 +4,4 @@ version = 4
 
 [[package]]
 name = "marco-trusted-publishing-test"
-version = "0.2.3"
+version = "0.2.4"
