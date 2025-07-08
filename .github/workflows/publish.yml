@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     # Required for OpenID Connect token retrieval
-    permissions:
-      id-token: write
+    #permissions:
+    #  id-token: write
 
     steps:
     - name: Checkout code
