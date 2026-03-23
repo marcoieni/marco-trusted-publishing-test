@@ -15,11 +15,11 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
     - name: Authenticate with crates.io
       id: auth
-      uses: kingsword09/crates-io-auth-action@migrate-from-tsup-to-tsdown
+      uses: rust-lang/crates-io-auth-action@update-to-node-24
       with:
         url: https://staging.crates.io
 
